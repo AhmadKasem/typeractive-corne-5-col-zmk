@@ -39,7 +39,7 @@
                         bindings = <
    AS(Q) AS(W) AS(E) AS(R) AS(T)     AS(Y)   AS(U)  AS(I)     AS(O)     AS(P)
    AS(A) AS(S) AS(D) AS(F) AS(G)     AS(H)   AS(J)  AS(K)     AS(L)     AS(SQT)
-   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &kp LCTL  &kp RALT  AS(DOT)
+   AS(Z) AS(X) AS(C) AS(V) AS(B)     AS(N)   AS(M)  &kp LCTL  &kp COMMA AS(DOT)
         &kp LGUI &mo 1 &kp SPACE     AS(RET) &mo 2  &kp BSPC
                         >;
                 };
@@ -61,12 +61,6 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// | 1! |  2@ |  3# |  4$ |  5% |     |  6^ |  7& |  8* |  9(  |  0)  |
-// | -_ |  =+ |  {  |  [  |  (  |     |  )  |  ]  |  }  |  /?  |  \|  |
-// | `~ |     |     |  ,< |  :  |     |  ;  |  .> | CTRL| META |      |
-//            | GUI | ESC | SPC |     | ENT |     | TAB |
-
-// -----------------------------------------------------------------------------------------
 // |    |     |  (  |  )  |     |     |     |  1! |  2@ |  3#  |  -_  |
 // |    |     |  [  |  ]  |     |     |  :  |  4$ |  5% |  6^  |  =+  |
 // | `~ |     |  {  |  }  |     |     |  ;  |  7& |  8* |  9(  |  ?   |
@@ -74,9 +68,9 @@
 
                         display-name = "Raise";
                         bindings = <
-   &trans       &trans       &kp LPAR     &kp RPAR     &trans           &trans    AS(N1)    AS(N2)    AS(N3)   AS(MINUS)
+   AS(GRAVE)       &trans       &kp LPAR     &kp RPAR     &trans           &trans    AS(N1)    AS(N2)    AS(N3)   AS(MINUS)
    &trans       &trans       &kp LBKT     &kp RBKT     &trans           &kp COLON AS(N4)    AS(N5)    AS(N6)   AS(EQUAL)
-   AS(GRAVE)    &trans       &kp LBRC     &kp RBRC     &trans           &kp SEMI  AS(N7)    AS(N8)    AS(N9)   &kp QMARK
+   &kp RALT    &trans       &kp LBRC     &kp RBRC     &trans           &kp SEMI  AS(N7)    AS(N8)    AS(N9)   &kp QMARK
                              &kp LGUI     &kp ESC      &kp SPACE        AS(RET)   &trans    AS(N0)
 		
 			>;
