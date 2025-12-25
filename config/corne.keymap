@@ -74,10 +74,10 @@
 
                         display-name = "Raise";
                         bindings = <
-                       &kp LPAR  &kp RPAR                          AS(N1)    AS(N2)    AS(N3)   AS(MINUS)
-                       &kp LBKT  &kp RBKT                &kp COLON AS(N4)    AS(N5)    AS(N6)   AS(EQUAL)
-   AS(GRAVE)           &kp LBRC  &kp RBRC                &kp SEMI  AS(N7)    AS(N8)    AS(N9)   &kp QMARK
-                       &kp LGUI  &kp ESC   &kp SPACE     AS(RET)             AS(N0)
+                             &kp LPAR     &kp RPAR                                AS(N1)    AS(N2)    AS(N3)   AS(MINUS)
+                             &kp LBKT     &kp RBKT                      &kp COLON AS(N4)    AS(N5)    AS(N6)   AS(EQUAL)
+   AS(GRAVE)                 &kp LBRC     &kp RBRC                      &kp SEMI  AS(N7)    AS(N8)    AS(N9)   &kp QMARK
+                             &kp LGUI     &kp ESC      &kp SPACE        AS(RET)             AS(N0)
 		
 			>;
                 };
