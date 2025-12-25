@@ -10,6 +10,23 @@
 
 
 #define AS(keycode) &as LS(keycode) keycode
+macros {
+    ctrl_shift_c: ctrl_shift_c {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&macro_press &kp LCTRL &kp LSHIFT>
+                 , <&macro_tap &kp C>
+                 , <&macro_release &kp LCTRL &kp LSHIFT>;
+    };
+    
+    ctrl_shift_v: ctrl_shift_v {
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = <&macro_press &kp LCTRL &kp LSHIFT>
+                 , <&macro_tap &kp V>
+                 , <&macro_release &kp LCTRL &kp LSHIFT>;
+    };
+};
 
 / {
     chosen {
@@ -61,17 +78,17 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |    |     |  (  |  )  |     |     |     |  1! |  2@ |  3#  |  -_  |
-// |    |     |  [  |  ]  |     |     |  :  |  4$ |  5% |  6^  |  =+  |
-// | `~ |     |  {  |  }  |     |     |  ;  |  7& |  8* |  9(  |  ?   |
-//            | GUI | ESC | SPC |     | ENT |     |  0) | 
+// |    |     |  (  |  )  | ctrl_shift_c |     |     |  1! |  2@ |  3#  |  -_  |
+// |    |     |  [  |  ]  | ctrl_shift_v |     |  :  |  4$ |  5% |  6^  |  =+  |
+// | `~ |     |  {  |  }  |              |     |  ;  |  7& |  8* |  9(  |  ?   |
+//            | GUI | ESC | SPC          |     | ENT |     |  0) | 
 
                         display-name = "Raise";
                         bindings = <
-   AS(GRAVE)       &trans       &kp LPAR     &kp RPAR     &trans           &trans    AS(N1)    AS(N2)    AS(N3)   AS(MINUS)
-   &trans       &trans       &kp LBKT     &kp RBKT     &trans           &kp COLON AS(N4)    AS(N5)    AS(N6)   AS(EQUAL)
-   &kp RALT    &trans       &kp LBRC     &kp RBRC     &trans           &kp SEMI  AS(N7)    AS(N8)    AS(N9)   &kp QMARK
-                             &kp LGUI     &kp ESC      &kp SPACE        AS(RET)   &trans    AS(N0)
+   AS(GRAVE)       &trans       &kp LPAR     &kp RPAR     &ctrl_shift_c           &trans    AS(N1)    AS(N2)    AS(N3)   AS(MINUS)
+   &trans          &trans       &kp LBKT     &kp RBKT     &ctrl_shift_v           &kp COLON AS(N4)    AS(N5)    AS(N6)   AS(EQUAL)
+   &kp RALT        &trans       &kp LBRC     &kp RBRC     &trans                  &kp SEMI  AS(N7)    AS(N8)    AS(N9)   &kp QMARK
+                                &kp LGUI     &kp ESC      &kp SPACE               AS(RET)   &trans    AS(N0)
 		
 			>;
                 };
