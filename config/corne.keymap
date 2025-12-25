@@ -10,25 +10,27 @@
 
 
 #define AS(keycode) &as LS(keycode) keycode
-/ macros {
-    ctrl_shift_c: ctrl_shift_c {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&macro_press &kp LCTRL &kp LSHIFT>
-                 , <&macro_tap &kp C>
-                 , <&macro_release &kp LCTRL &kp LSHIFT>;
-    };
-    
-    ctrl_shift_v: ctrl_shift_v {
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&macro_press &kp LCTRL &kp LSHIFT>
-                 , <&macro_tap &kp V>
-                 , <&macro_release &kp LCTRL &kp LSHIFT>;
-    };
-};
 
 / {
+
+    macros {
+        ctrl_shift_c: ctrl_shift_c {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHIFT>
+                     , <&macro_tap &kp C>
+                     , <&macro_release &kp LCTRL &kp LSHIFT>;
+        };
+        
+        ctrl_shift_v: ctrl_shift_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL &kp LSHIFT>
+                     , <&macro_tap &kp V>
+                     , <&macro_release &kp LCTRL &kp LSHIFT>;
+        };
+    };
+
     chosen {
         zmk,physical-layout = &foostan_corne_5col_layout;
     };
