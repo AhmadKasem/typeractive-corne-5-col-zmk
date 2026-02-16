@@ -65,6 +65,12 @@
             timeout-ms = <50>;
             key-positions = <20 29>;  // Z + . (bottom corners)
             bindings = <&tog 4>;
+        }; 
+
+	combo_mouse_hold {
+        timeout-ms = <50>;
+        key-positions = <0 1>;  // Q + W
+        bindings = <&mo 4>;     // Momentary mouse layer
         };
     };
 
@@ -108,12 +114,6 @@
             bindings = <&sk LSHFT>, <&caps_word>;
             mods = <(MOD_LSFT)>;
     	};
-
-	combo_mouse_hold {
-        timeout-ms = <50>;
-        key-positions = <0 1>;  // Q + W
-        bindings = <&mo 4>;     // Momentary mouse layer
-       };
 
 
 
