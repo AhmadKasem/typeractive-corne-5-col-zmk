@@ -55,15 +55,15 @@
             bindings = <&mo 3>;
         };
 
-	combo_mouse {
+	/*combo_mouse {
             timeout-ms = <50>;
             key-positions = <20 29>;  // Z + . (bottom corners)
             bindings = <&tog 4>;
-        }; 
+        }; */
 
 	combo_mouse_hold {
         timeout-ms = <50>;
-        key-positions = <0 1>;  // Q + W
+        key-positions = <11 12>;  // Q + W
         bindings = <&mo 4>;     // Momentary mouse layer
         };
     };
@@ -178,7 +178,7 @@
                         bindings = <
    &trans       &trans       &trans       &trans           &trans                 &trans      &mmv MOVE_X(-5000)   &mmv MOVE_Y(5000)   &mmv MOVE_Y(-5000)   &mmv MOVE_X(5000) 
    &trans       &trans       &trans       &msc SCRL_UP     &trans                 &trans      &mmv MOVE_X(-1500)   &mmv MOVE_Y(1500)   &mmv MOVE_Y(-1500)   &mmv MOVE_X(1500)
-   &trans       &trans       &trans       &msc SCRL_DOWN   &trans                 &trans      &mmv MOVE_X(-300)    &mmv MOVE_Y(300)    &mmv MOVE_Y(-300)    &mmv MOVE_X(300)  
+   &kp LCTRL    &trans       &trans       &msc SCRL_DOWN   &trans                 &trans      &mmv MOVE_X(-300)    &mmv MOVE_Y(300)    &mmv MOVE_Y(-300)    &mmv MOVE_X(300)  
                              &trans       &mkp MCLK        &mkp LCLK              &kp RET     &mkp RCLK            &trans
                         >;
 };
