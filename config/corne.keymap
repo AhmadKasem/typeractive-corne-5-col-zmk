@@ -63,7 +63,7 @@
 
 	combo_mouse_hold {
         timeout-ms = <50>;
-        key-positions = <11 12>;  // Q + W
+        key-positions = <32>;  // left thumb
         bindings = <&mo 4>;     // Momentary mouse layer
         };
     };
@@ -177,9 +177,9 @@
                         display-name = "Mouse";
                         bindings = <
    &trans       &trans       &trans       &trans           &trans                 &trans      &mmv MOVE_X(-5000)   &mmv MOVE_Y(5000)   &mmv MOVE_Y(-5000)   &mmv MOVE_X(5000) 
-   &trans       &trans       &trans       &msc SCRL_UP     &trans                 &trans      &mmv MOVE_X(-1500)   &mmv MOVE_Y(1500)   &mmv MOVE_Y(-1500)   &mmv MOVE_X(1500)
-   &kp LCTRL    &trans       &trans       &msc SCRL_DOWN   &trans                 &trans      &mmv MOVE_X(-300)    &mmv MOVE_Y(300)    &mmv MOVE_Y(-300)    &mmv MOVE_X(300)  
-                             &trans       &mkp MCLK        &mkp LCLK              &kp RET     &mkp RCLK            &trans
+   &trans       &trans       &trans       &msc SCRL_UP     &mkp LCLK              &trans      &mmv MOVE_X(-1500)   &mmv MOVE_Y(1500)   &mmv MOVE_Y(-1500)   &mmv MOVE_X(1500)
+   &kp LCTRL    &trans       &trans       &msc SCRL_DOWN   &mkp MCLK              &trans      &mmv MOVE_X(-300)    &mmv MOVE_Y(300)    &mmv MOVE_Y(-300)    &mmv MOVE_X(300)  
+                             &trans       &trans           &trans                 &kp RET     &mkp RCLK            &trans
                         >;
 };
 		
