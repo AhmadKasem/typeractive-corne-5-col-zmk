@@ -180,10 +180,10 @@
                 mouse_layer {
                         display-name = "Mouse";
                         bindings = <
-   &trans       &trans       &trans       &trans           &trans                 &trans      &mmv MOVE_X(-5000)   &mmv MOVE_Y(5000)   &mmv MOVE_Y(-5000)   &mmv MOVE_X(5000) 
-   &trans       &trans       &trans       &msc SCRL_UP     &mkp LCLK              &trans      &mmv MOVE_X(-1500)   &mmv MOVE_Y(1500)   &mmv MOVE_Y(-1500)   &mmv MOVE_X(1500)
-   &kp LCTRL    &trans       &trans       &msc SCRL_DOWN   &mkp MCLK              &trans      &mmv MOVE_X(-300)    &mmv MOVE_Y(300)    &mmv MOVE_Y(-300)    &mmv MOVE_X(300)  
-                             &trans       &trans           &trans                 &kp RET     &mkp RCLK            &trans
+   &trans       &trans       &trans          &trans       &trans           &trans      &mmv MOVE_X(-5000)   &mmv MOVE_Y(5000)   &mmv MOVE_Y(-5000)   &mmv MOVE_X(5000) 
+   &kp LCTRL    &kp LSHFT    &msc SCRL_UP    &mkp LCLK    &trans           &trans      &mmv MOVE_X(-1500)   &mmv MOVE_Y(1500)   &mmv MOVE_Y(-1500)   &mmv MOVE_X(1500)
+   &kp LCTRL    &trans       &msc SCRL_DOWN  &mkp MCLK    &trans           &trans      &mmv MOVE_X(-300)    &mmv MOVE_Y(300)    &mmv MOVE_Y(-300)    &mmv MOVE_X(300)  
+                             &trans          &trans       &trans           &kp RET     &mkp RCLK            &trans
                         >;
 };
 		
